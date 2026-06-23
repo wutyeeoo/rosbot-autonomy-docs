@@ -1,0 +1,75 @@
+site_name: My Robot Project
+site_description: ROS2 differential drive robot with SLAM and Nav2
+site_author: Wut Yee Oo
+repo_url: https://github.com/wutyeeoo/husarion_ugv_autonomy_ros
+repo_name: husarion_ugv_autonomy_ros
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - tables
+  - footnotes
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Foundation
+  - Hardware:
+    - Overview: hardware/overview.md
+    - Electronics: hardware/electronics.md
+    - Mechanical: hardware/mechanical.md
+  - Software:
+    - Architecture: software/architecture.md
+    - ROS2 Setup: software/ros2_setup.md
+    - Firmware: software/firmware.md
+  - Sensors:
+    - Lidar Merger: sensors/lidar_merger.md
+    - IMU: sensors/imu.md
+  - Navigation:
+    - SLAM: navigation/slam.md
+    - Nav2: navigation/nav2.md
+    - Costmap Tuning: navigation/costmap.md
+  - Findings:
+    - QoS Issues: findings/qos.md
+    - E-Stop Design: findings/estop.md
+    - Debugging Log: findings/debugging.md
