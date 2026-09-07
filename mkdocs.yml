@@ -62,9 +62,10 @@ nav:
     - Architecture: software/architecture.md
     - ROS2 Setup: software/ros2_setup.md
     - Firmware: software/firmware.md
-  - Sensors:
+  - Sensors & Controls:
     - Lidar Merger: sensors/lidar_merger.md
     - IMU: sensors/imu.md
+    - Motor Controls: sensors/motor_controls.md
   - Navigation:
     - SLAM: navigation/slam.md
     - Nav2: navigation/nav2.md
